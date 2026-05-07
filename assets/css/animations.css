@@ -1,0 +1,72 @@
+/* =========================
+   NAVBAR LINKS
+========================= */
+
+.navbar nav a{
+  transition:0.3s;
+}
+
+.navbar nav a:hover{
+  color:var(--primary);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn-primary{
+  transition:0.35s;
+}
+
+.btn-primary:hover{
+  transform:translateY(-4px);
+}
+
+.btn-secondary{
+  transition:0.3s;
+}
+
+.btn-secondary:hover{
+
+  background:var(--primary-dark);
+  color:white;
+}
+
+/* =========================
+   ABOUT CARDS
+========================= */
+
+.about-card{
+  transition:0.35s;
+}
+
+.about-card:hover{
+
+  transform:translateY(-10px);
+
+  border-color:rgba(0,200,150,0.25);
+}
+
+/* =========================
+   SPEAKER CARDS
+========================= */
+
+.speaker-card{
+  transition:0.35s;
+}
+
+.speaker-card:hover{
+  transform:translateY(-12px);
+}
+
+/* =========================
+   SPEAKER IMAGES
+========================= */
+
+.speaker-card img{
+  transition:0.4s;
+}
+
+.speaker-card:hover img{
+  transform:scale(1.05);
+}
