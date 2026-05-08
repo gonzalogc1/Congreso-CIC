@@ -460,14 +460,27 @@ section{
 }
 
 .research-section h3{
-  font-size:1.5rem;
+  font-size:1.8rem;
   color:var(--text);
   margin-bottom:12px;
-  font-weight:700;
-  max-width:1400px;
+  font-weight:800;
+  max-width:1200px;
   margin-left:auto;
   margin-right:auto;
   padding:0 6%;
+  text-align:center;
+  letter-spacing:-0.4px;
+}
+
+.research-section h3::after{
+  content: '';
+  display:block;
+  width:96px;
+  height:6px;
+  margin:12px auto 0;
+  border-radius:6px;
+  background: linear-gradient(90deg, rgba(79,255,176,0.95), rgba(0,200,150,0.9));
+  box-shadow: 0 8px 20px rgba(79,255,176,0.12);
 }
 
 .research-intro{
@@ -475,10 +488,11 @@ section{
   line-height:1.8;
   margin-bottom:36px;
   font-size:1.02rem;
-  max-width:1400px;
+  max-width:920px;
   margin-left:auto;
   margin-right:auto;
   padding:0 6%;
+  text-align:center;
 }
 
 .research-carousel-container{
