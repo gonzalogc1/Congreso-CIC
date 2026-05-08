@@ -1,0 +1,64 @@
+/* New About Section Styles */
+
+.about-content{
+  max-width:900px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:start;
+}
+
+.about-text-block{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.about-text-block p{
+  color:var(--text-secondary);
+  line-height:1.8;
+  font-size:1.05rem;
+}
+
+.about-research-lines{
+  background:rgba(255,255,255,0.8);
+  border-radius:24px;
+  padding:40px;
+  border:1px solid var(--border);
+  box-shadow:var(--shadow);
+}
+
+.about-research-lines h3{
+  font-size:1.4rem;
+  color:var(--text);
+  margin-bottom:18px;
+}
+
+.research-intro{
+  color:var(--text-secondary);
+  line-height:1.8;
+  margin-bottom:20px;
+  font-size:1rem;
+}
+
+.research-list{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.research-list li{
+  padding:12px 14px;
+  background:linear-gradient(135deg, rgba(79,255,176,0.08), rgba(0,200,150,0.04));
+  border-radius:12px;
+  color:var(--text);
+  border-left:3px solid var(--primary);
+  font-weight:500;
+}
+
+@media (max-width:768px){
+  .about-content{ grid-template-columns:1fr; gap:30px; }
+  .about-research-lines{ padding:28px; }
+}

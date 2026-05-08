@@ -1,0 +1,11 @@
+<!-- CSS PRINCIPAL -->
+<link rel="stylesheet" href="assets/css/styles.css">
+
+<!-- NUEVA SECCION ABOUT -->
+<link rel="stylesheet" href="assets/css/about-new.css">
+
+<!-- ANIMACIONES -->
+<link rel="stylesheet" href="assets/css/animations.css">
+
+<!-- RESPONSIVE -->
+<link rel="stylesheet" href="assets/css/responsive.css">
