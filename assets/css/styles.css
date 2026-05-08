@@ -344,6 +344,229 @@ section{
 
 .about{
   background:var(--background-soft);
+  padding:80px 6%;
+}
+
+.congress-intro{
+  text-align:center;
+  max-width:720px;
+  margin:40px auto 60px;
+  font-size:1.1rem;
+  line-height:1.8;
+  color:var(--text-secondary);
+}
+
+.congress-pillars{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:28px;
+  margin-bottom:70px;
+  max-width:1400px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.pillar-card{
+  background:linear-gradient(135deg, rgba(79,255,176,0.12), rgba(230,255,242,0.10));
+  border:2px solid rgba(79,255,176,0.28);
+  border-radius:24px;
+  padding:32px;
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+  box-shadow:0 20px 60px rgba(6,37,37,0.16), inset 0 1px 0 rgba(255,255,255,0.24);
+  transition:all 0.45s cubic-bezier(0.23,1,0.320,1);
+  position:relative;
+  overflow:hidden;
+}
+
+.pillar-card::before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:3px;
+  background:linear-gradient(90deg, var(--primary), rgba(79,255,176,0));
+  opacity:0;
+  transition:opacity 0.45s ease;
+}
+
+.pillar-card:hover{
+  background:linear-gradient(135deg, rgba(79,255,176,0.18), rgba(230,255,242,0.14));
+  border-color:rgba(79,255,176,0.42);
+  box-shadow:0 32px 80px rgba(79,255,176,0.22), inset 0 1px 0 rgba(255,255,255,0.32);
+  transform:translateY(-8px);
+}
+
+.pillar-card:hover::before{
+  opacity:1;
+}
+
+.pillar-header{
+  margin-bottom:16px;
+  padding-bottom:14px;
+  border-bottom:3px solid var(--primary);
+  position:relative;
+}
+
+.pillar-header::after{
+  content:'';
+  position:absolute;
+  bottom:-3px;
+  left:0;
+  right:0;
+  height:3px;
+  background:linear-gradient(90deg, var(--primary), rgba(79,255,176,0));
+  opacity:0;
+  transition:opacity 0.45s ease;
+}
+
+.pillar-card:hover .pillar-header::after{
+  opacity:1;
+}
+
+.pillar-card h3{
+  font-size:1.35rem;
+  color:var(--text);
+  font-weight:700;
+  margin:0;
+  letter-spacing:-0.3px;
+  background:linear-gradient(135deg, var(--text), var(--primary-dark));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+  transition:all 0.45s ease;
+}
+
+.pillar-card:hover h3{
+  letter-spacing:0px;
+}
+
+.pillar-card p{
+  font-size:1rem;
+  line-height:1.8;
+  color:var(--text-secondary);
+  margin:0;
+  transition:color 0.45s ease;
+}
+
+.pillar-card:hover p{
+  color:var(--text);
+}
+
+.research-section{
+  margin:80px 0 0;
+  padding:80px 6% 0;
+}
+
+.research-section h3{
+  font-size:1.5rem;
+  color:var(--text);
+  margin-bottom:12px;
+  font-weight:700;
+  max-width:1400px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0 6%;
+}
+
+.research-intro{
+  color:var(--text-secondary);
+  line-height:1.8;
+  margin-bottom:36px;
+  font-size:1.02rem;
+  max-width:1400px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0 6%;
+}
+
+.research-carousel-container{
+  width:100vw;
+  margin-left:calc(-50vw + 50%);
+  overflow:hidden;
+  padding:12px 0;
+  margin-top:36px;
+}
+
+.research-cards{
+  display:flex;
+  gap:28px;
+  flex-wrap:nowrap;
+  animation:slideCarousel 40s linear infinite;
+}
+
+@keyframes slideCarousel{
+  0%{
+    transform:translateX(0);
+  }
+  100%{
+    transform:translateX(-50%);
+  }
+}
+
+.research-card{
+  background:rgba(255,255,255,0.85);
+  border:1px solid rgba(79,255,176,0.28);
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 16px 48px rgba(6,37,37,0.16);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  transition:all 0.38s cubic-bezier(0.23,1,0.320,1);
+  display:flex;
+  flex-direction:column;
+  flex-shrink:0;
+  width:290px;
+  min-width:290px;
+}
+
+.research-card:hover{
+  background:rgba(255,255,255,0.92);
+  border-color:rgba(79,255,176,0.42);
+  box-shadow:0 24px 64px rgba(6,37,37,0.22);
+  transform:translateY(-8px);
+  animation-play-state:paused;
+}
+
+.research-card-image{
+  width:100%;
+  height:200px;
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  position:relative;
+}
+
+.research-card-image::after{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background:linear-gradient(135deg, rgba(79,255,176,0.15), rgba(0,200,150,0.10));
+  mix-blend-mode:overlay;
+}
+
+.research-card-content{
+  padding:28px 22px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  flex-grow:1;
+}
+
+.research-card span{
+  color:var(--text);
+  font-weight:600;
+  font-size:1rem;
+  line-height:1.6;
+}
+
+.research-card:hover span{
+  color:var(--primary-dark);
 }
 
 .about-grid{
@@ -383,6 +606,34 @@ section{
   line-height:1.8;
 
   color:var(--text-secondary);
+}
+
+@media (max-width: 900px){
+  .congress-pillars{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+
+  .pillar-card{
+    padding:24px;
+  }
+
+  .research-card{
+    width:260px;
+    min-width:260px;
+  }
+
+  .research-card-image{
+    height:160px;
+  }
+
+  .research-card-content{
+    padding:20px 16px;
+  }
+
+  .research-card span{
+    font-size:0.95rem;
+  }
 }
 
 /* =========================
@@ -526,18 +777,21 @@ section{
 
   overflow:hidden;
 
-  background:rgba(255,255,255,0.88);
+  background:rgba(255,255,255,0.16);
 
-  border:1px solid rgba(15,23,42,0.08);
+  border:1px solid rgba(255,255,255,0.24);
 
-  box-shadow:var(--shadow);
+  box-shadow:0 18px 50px rgba(6, 37, 37, 0.12);
 
   backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);
+
+  transition:box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .committee-card-highlight{
 
-  border-color:rgba(0,200,150,0.18);
+  border-color:rgba(79,255,176,0.36);
 }
 
 .committee-card-header{
@@ -550,12 +804,7 @@ section{
 
   padding:16px 24px;
 
-  background:
-    linear-gradient(
-      135deg,
-      #031716,
-      #062625
-    );
+  background:linear-gradient(135deg, rgba(3, 23, 22, 0.82), rgba(6, 38, 37, 0.72));
 
   color:var(--white);
 }
@@ -593,6 +842,10 @@ section{
   overflow:auto;
 
   padding:18px 18px 22px;
+
+  background:rgba(255,255,255,0.10);
+  backdrop-filter:blur(22px);
+  -webkit-backdrop-filter:blur(22px);
 }
 
 .committee-members-list{
@@ -612,11 +865,25 @@ section{
 
   border-radius:18px;
 
-  background:linear-gradient(135deg, rgba(230,255,242,0.95), rgba(255,255,255,0.98));
+  background:linear-gradient(135deg, rgba(255,255,255,0.24), rgba(230,255,242,0.10));
 
-  border:1px solid rgba(0,200,150,0.14);
+  border:1px solid rgba(255,255,255,0.16);
 
-  box-shadow:0 8px 20px rgba(0,0,0,0.04);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+
+  box-shadow:0 10px 26px rgba(6, 37, 37, 0.04);
+
+  transition:transform 0.24s ease, box-shadow 0.24s ease, border-color 0.24s ease;
+}
+
+.committee-members-list li:hover{
+
+  transform:scale(1.03);
+
+  box-shadow:0 14px 34px rgba(0,200,150,0.14);
+
+  border-color:rgba(79,255,176,0.45);
 }
 
 .committee-members-list strong{
@@ -1556,21 +1823,23 @@ footer{
   text-align:center;
   padding:14px 18px;
   border-radius:999px;
-  border:1px solid transparent;
-  background:transparent;
-  color:var(--text-secondary);
+  border:1px solid rgba(255,255,255,0.08);
+  background:rgba(5,10,20,0.35);
+  color:rgba(255,255,255,0.72);
   font-weight:700;
   cursor:pointer;
   transition:all .18s ease;
+    backdrop-filter:blur(18px);
+
 }
 
-.day-button:hover{ transform:translateY(-2px); }
+.day-button:hover{ transform:translateY(-2px); box-shadow:0 8px 24px rgba(0,200,150,0.12); }
 
 .day-button.active{
-  background:linear-gradient(90deg, rgba(79,255,176,0.14), rgba(0,200,150,0.06));
-  color:var(--text);
-  box-shadow:0 10px 30px rgba(0,200,150,0.08);
-  border:1px solid rgba(0,200,150,0.14);
+  background:rgba(5,10,20,0.65);
+  color:var(--primary);
+  box-shadow:0 10px 30px rgba(0,200,150,0.15);
+  border:1px solid rgba(0,200,150,0.24);
 }
 
 .schedule-panels{ margin-top:12px; }
@@ -1578,7 +1847,7 @@ footer{
 .schedule-panel[hidden]{ display:none !important; }
 
 .block{
-  background:linear-gradient(180deg, rgba(255,255,255,0.92), rgba(240,255,247,0.6));
+  background:linear-gradient(180deg, rgba(255,255,255,0.92), rgba(112, 245, 174, 0.263));
   border-radius:16px;
   padding:18px;
   margin-bottom:14px;
