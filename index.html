@@ -10,6 +10,7 @@ content="default-src 'self';
 img-src 'self' https:;
 style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
 font-src https://fonts.gstatic.com;
+frame-src https://www.google.com https://www.google.com/maps https://www.youtube.com https://www.youtube-nocookie.com;
 script-src 'self' 'unsafe-inline';
 ">
 
@@ -306,67 +307,134 @@ script-src 'self' 'unsafe-inline';
   <!-- =========================
        AGENDA
   ========================= -->
-
   <section class="agenda" id="agenda">
 
     <div class="section-title">
 
-      <p>EVENT SCHEDULE</p>
+      <p>AGENDA</p>
 
       <h2>
-        Agenda del Congreso
+        Cronograma de Ponencias Técnicas
       </h2>
 
     </div>
 
-    <div class="timeline">
+    <div class="schedule">
 
-      <div class="timeline-item">
+      <div class="schedule-top">
+        <div class="schedule-controls" role="tablist" aria-label="Seleccionar día">
+          <button class="day-button active" data-day="martes" role="tab">MARTES 28 DE OCTUBRE</button>
+          <button class="day-button" data-day="miercoles" role="tab">MIÉRCOLES 29 DE OCTUBRE</button>
+          <button class="day-button" data-day="jueves" role="tab">JUEVES 30 DE OCTUBRE</button>
+        </div>
+      </div>
 
-        <span>09:00</span>
+      <div class="schedule-panels">
 
-        <div>
+        <div class="schedule-panel" data-day="martes">
 
-          <h3>Opening Ceremony</h3>
+          <div class="block">
+            <div class="block-header">
+              <div>
+                <p class="block-title">BLOQUE 1</p>
+                <h4>11:30 - 12:30</h4>
+              </div>
+            </div>
 
-          <p>
-            Bienvenida oficial y presentación
-            del congreso internacional.
-          </p>
+            <ul class="paper-list">
+              <li class="paper-item"><span class="paper-badge">1</span><div class="paper-content">Quantum Associative Classification Model Using Amplitude-Encoded Feature Similitude <span class="paper-tag">Regular Session</span></div></li>
+              <li class="paper-item"><span class="paper-badge">2</span><div class="paper-content">Physics-Informed Neural Networks for Approximating the Solution of the 1D Poisson Equation <span class="paper-tag">Regular Session</span></div></li>
+              <li class="paper-item"><span class="paper-badge">3</span><div class="paper-content">Modeling the Diffusion Equation with Physics-Informed Neural Networks (PINNs) and Artificial Neural Networks (ANNs) <span class="paper-tag">Regular Session</span></div></li>
+            </ul>
+          </div>
+
+          <div class="block">
+            <div class="block-header">
+              <div>
+                <p class="block-title">BLOQUE 2</p>
+                <h4>13:00 - 14:00</h4>
+              </div>
+            </div>
+
+            <ul class="paper-list">
+              <li class="paper-item"><span class="paper-badge">1</span><div class="paper-content">Implementation and Comparison of FIR Digital Filters on DSP and FPGA <span class="paper-tag">Regular Session</span></div></li>
+              <li class="paper-item"><span class="paper-badge">2</span><div class="paper-content">Real-Time Sheet Alignment in Mobile Devices Using Reference Mark-Based Elements <span class="paper-tag">Regular Session</span></div></li>
+              <li class="paper-item"><span class="paper-badge">3</span><div class="paper-content">Fuzzy Inference Systems with Evolutionary Optimization for Timely Harvest Prediction: A Case Study <span class="paper-tag">Regular Session</span></div></li>
+              <li class="paper-item"><span class="paper-badge">4</span><div class="paper-content">BREX: Blend of Ranked-sequential Algorithms Executed for boosting-based classification applied to wine dataset <span class="paper-tag">Regular Session</span></div></li>
+            </ul>
+          </div>
 
         </div>
 
-      </div>
+        <div class="schedule-panel" data-day="miercoles" hidden>
 
-      <div class="timeline-item">
+          <div class="block">
+            <div class="block-header">
+              <div>
+                <p class="block-title">BLOQUE 3</p>
+                <h4>13:00 - 14:00</h4>
+              </div>
+            </div>
 
-        <span>11:00</span>
+            <ul class="paper-list">
+              <li class="paper-item"><span class="paper-badge">1</span><div class="paper-content">A Bio-Inspired SN P-Based Visual Cryptographic for Binary Data Hiding in Digital Images <span class="paper-tag">Regular Session</span></div></li>
+              <li class="paper-item"><span class="paper-badge">2</span><div class="paper-content">Impact of Binarization on the Performance of Associative Memories in Machine Learning <span class="paper-tag">Regular Session</span></div></li>
+              <li class="paper-item"><span class="paper-badge">3</span><div class="paper-content">An Integer Quadratically Constrained Program for the Firefighter Problem: an Empirical Evaluation <span class="paper-tag">Regular Session</span></div></li>
+              <li class="paper-item"><span class="paper-badge">4</span><div class="paper-content">Authorship Attribution in a Scientific Papers by Syntactic and Semantic Textual Representations <span class="paper-tag">Regular Session</span></div></li>
+            </ul>
+          </div>
 
-        <div>
+          <div class="block">
+            <div class="block-header">
+              <div>
+                <p class="block-title">BLOQUE 4</p>
+                <h4>13:00 - 14:00</h4>
+              </div>
+            </div>
 
-          <h3>GeoAI Workshop</h3>
-
-          <p>
-            Taller práctico sobre machine learning
-            aplicado a datos geoespaciales.
-          </p>
+            <ul class="paper-list">
+              <li class="paper-item"><span class="paper-badge">1</span><div class="paper-content">Fine-Grained Insights Generation based on Semantic Clustering from Online Reviews <span class="paper-tag">Regular Session</span></div></li>
+              <li class="paper-item"><span class="paper-badge">2</span><div class="paper-content">Analysis of Conversations in Adults Using Multimodal Data Processing <span class="paper-tag">Regular Session</span></div></li>
+              <li class="paper-item"><span class="paper-badge">3</span><div class="paper-content">Application of Natural Language Processing Techniques for the Classification and Recommendation of University-Level Mathematical Content <span class="paper-tag">Regular Session</span></div></li>
+              <li class="paper-item"><span class="paper-badge">4</span><div class="paper-content">Enhancing English–Urdu Machine Translation Using Transfer Learning <span class="paper-tag">Regular Session</span></div></li>
+            </ul>
+          </div>
 
         </div>
 
-      </div>
+        <div class="schedule-panel" data-day="jueves" hidden>
 
-      <div class="timeline-item">
+          <div class="block">
+            <div class="block-header">
+              <div>
+                <p class="block-title">BLOQUE 5</p>
+                <h4>13:00 - 14:00</h4>
+              </div>
+            </div>
 
-        <span>14:00</span>
+            <ul class="paper-list">
+              <li class="paper-item"><span class="paper-badge">1</span><div class="paper-content">Rapid Upper Limb Assessment Based on Fuzzy Logic and a Bluetooth Low Energy Sensor Network <span class="paper-tag">Regular Session</span></div></li>
+              <li class="paper-item"><span class="paper-badge">2</span><div class="paper-content">Understanding Functional Impairment in Rheumatoid Arthritis: A Data-Driven Approach Using HAQ-DI and Clinical Metrics <span class="paper-tag">Regular Session</span></div></li>
+              <li class="paper-item"><span class="paper-badge">3</span><div class="paper-content">Data Lakehouse for Type 2 Diabetes Remission: Scoping Review and Architectural Proposal <span class="paper-tag">Regular Session</span></div></li>
+              <li class="paper-item"><span class="paper-badge">4</span><div class="paper-content">Development and Evaluation of a Classification Model for Parkinson’s Disease Detection Based on Ensemble Learning and Comparative Feature Selection Strategies <span class="paper-tag">Regular Session</span></div></li>
+            </ul>
+          </div>
 
-        <div>
+          <div class="block">
+            <div class="block-header">
+              <div>
+                <p class="block-title">BLOQUE 6</p>
+                <h4>13:00 - 14:00</h4>
+              </div>
+            </div>
 
-          <h3>Panel Discussion</h3>
-
-          <p>
-            Discusión sobre IA, GIS,
-            ética y ciudades inteligentes.
-          </p>
+            <ul class="paper-list">
+              <li class="paper-item"><span class="paper-badge">1</span><div class="paper-content">Impact of Data Augmentation Applied to Fundus Images Used in a Swin Transformer V2-Based Model for the Detection of Age-Related MACular Degeneration <span class="paper-tag">Regular Session</span></div></li>
+              <li class="paper-item"><span class="paper-badge">2</span><div class="paper-content">EEG Conformer for Inner Speech Limitations in Model Transferability and Mitigation Strategies <span class="paper-tag">Regular Session</span></div></li>
+              <li class="paper-item"><span class="paper-badge">3</span><div class="paper-content">U-Net Based Active Matter Time Evolution <span class="paper-tag">Regular Session</span></div></li>
+              <li class="paper-item"><span class="paper-badge">4</span><div class="paper-content">YOLO Meets Tlaxcala: Toward Real-Time Urban Object Detection for Assistive Technology <span class="paper-tag">Regular Session</span></div></li>
+            </ul>
+          </div>
 
         </div>
 
@@ -375,6 +443,10 @@ script-src 'self' 'unsafe-inline';
     </div>
 
   </section>
+
+  <!-- =========================
+       COMITE ORGANIZADOR
+  ========================= -->
 
   <!-- =========================
        CTA
@@ -384,14 +456,167 @@ script-src 'self' 'unsafe-inline';
 
     <div class="cta-content">
 
+      <div class="cta-layout">
+
+        <div class="cta-copy">
+
+          <h2>
+            ¿Qué es el CIC?
+          </h2>
+
+          <p class="cta-description">
+            El Centro de Investigación en Computación (CIC) del IPN es un referente internacional en la investigación científica y tecnológica. Descubre cómo estamos impulsando el desarrollo de la Inteligencia Artificial, la Ciencia de Datos y el análisis geoespacial en México.
+          </p>
+
+        </div>
+
+        <div class="cta-video">
+
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/xUBO6IPtOc0?autoplay=1&mute=1&controls=1&loop=1&playlist=xUBO6IPtOc0&rel=0&modestbranding=1"
+            title="Video promocional GeoAI Congress"
+            allow="autoplay; encrypted-media; picture-in-picture; web-share"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       COMITE ORGANIZADOR
+  ========================= -->
+
+  <section class="committee" id="committee">
+
+    <div class="section-title">
+
+      <p>Comité organizador</p>
+
       <h2>
-        Únete al evento más importante
-        de GeoAI en Latinoamérica
+        Comité organizador
       </h2>
 
-      <button class="btn-primary">
-        Registrarme ahora
-      </button>
+    </div>
+
+    <div class="committee-stack">
+
+      <article class="committee-card committee-card-highlight">
+
+        <div class="committee-card-header">
+          <div>
+            <h3>Organizadores</h3>
+          </div>
+          <span>2 integrantes</span>
+        </div>
+
+        <div class="committee-members-scroll">
+          <ul class="committee-members-list">
+            <li><strong>Dra. Ana María Magdalena Saldaña Pérez</strong></li>
+            <li><strong>Dra. Ana Laura González Alejo</strong></li>
+          </ul>
+        </div>
+
+      </article>
+
+      <article class="committee-card">
+
+        <div class="committee-card-header">
+          <div>
+            <h3>Comité académico</h3>
+          </div>
+          <span>8 integrantes</span>
+        </div>
+
+        <div class="committee-members-scroll">
+          <ul class="committee-members-list">
+            <li><strong>Dra. Ana María Magdalena Saldaña Pérez</strong></li>
+            <li><strong>Dra. Ana Laura González Alejo</strong></li>
+            <li><strong>M. en C. Carolina Palma Preciado</strong></li>
+            <li><strong>M. en C. Miguel Ángel Isabel Zarazúa</strong></li>
+            <li><strong>M. en C. Jesús Brandon Mañón Juárez</strong></li>
+            <li><strong>M. en C. Jesús Saldaña Pérez</strong></li>
+            <li><strong>Ing. Maricruz Trejo Salazar</strong></li>
+            <li><strong>Dra. Blanca Lidia Miranda</strong></li>
+          </ul>
+        </div>
+
+      </article>
+
+      <article class="committee-card">
+
+        <div class="committee-card-header">
+          <div>
+            <h3>Comité técnico</h3>
+          </div>
+          <span>6 integrantes</span>
+        </div>
+
+        <div class="committee-members-scroll">
+          <ul class="committee-members-list">
+            <li><strong>Espinosa Domínguez Isaac Alejandro</strong></li>
+            <li><strong>Villalobos Atilano Johan Alejandro</strong></li>
+            <li><strong>Goytia Licona Johan</strong></li>
+            <li><strong>Isyary Wendolyn Mendez Rangel</strong></li>
+            <li><strong>Aylin Azuara Castro</strong></li>
+            <li><strong>Christian Arturo Sorcia</strong></li>
+          </ul>
+        </div>
+
+      </article>
+
+      <article class="committee-card">
+
+        <div class="committee-card-header">
+          <div>
+            <h3>Revisores externos</h3>
+          </div>
+          <span>29 integrantes</span>
+        </div>
+
+        <div class="committee-members-scroll">
+          <ul class="committee-members-list">
+            <li><strong>Dr. Karinne Ramirez Amaro</strong><span class="committee-affiliation">Chalmers University of Technology – Systems and Control, Electrical Engineering</span></li>
+            <li><strong>Mara Grimaldi</strong><span class="committee-affiliation">University of Salerno, Fisciano, Italy</span></li>
+            <li><strong>Dr. Anna Visvizi</strong><span class="committee-affiliation">SGH Warsaw School of Economics</span></li>
+            <li><strong>Dr. Orlando Troisi</strong><span class="committee-affiliation">University of Salerno, Fisciano, Italy</span></li>
+            <li><strong>Dr. Krzysztof Karwowski</strong><span class="committee-affiliation">SGH Warsaw School of Economics</span></li>
+            <li><strong>Dr. Katarzyna Szopik-Depczyńska</strong><span class="committee-affiliation">University of Szczecin, Poland</span></li>
+            <li><strong>Dr. Yves Wautelet</strong><span class="committee-affiliation">KU Leuven, Brussels Campus, Belgium</span></li>
+            <li><strong>Dr. Anna Moni</strong><span class="committee-affiliation">The American College of Greece, Athens, Greece</span></li>
+            <li><strong>Dr. Bilal Afzal Mirxa</strong><span class="committee-affiliation">EU Business School, Barcelona, Spain</span></li>
+            <li><strong>Regina Negri Pagani</strong><span class="committee-affiliation">Federal University of Technology – Paraná, Brazil.</span></li>
+            <li><strong>Dr. Carlos A. Coello Coello</strong><span class="committee-affiliation">Center for Research and Advanced Studies of the National Polytechnic Institute</span></li>
+            <li><strong>Dr. Maria del Carmen Heras Sanchez</strong><span class="committee-affiliation">University of Sonora – Interdisciplinary Faculty of Exact and Natural Sciences</span></li>
+            <li><strong>Noemí Juárez Sánchez</strong><span class="committee-affiliation">Autonomous Metropolitan University – Division of Natural Sciences and Engineering</span></li>
+            <li><strong>Óscar Rodríguez Cerda</strong><span class="committee-affiliation">Autonomous Metropolitan University – Division of Social Sciences and Humanities</span></li>
+            <li><strong>Dr. Enrique Propin Frejomil</strong><span class="committee-affiliation">National Autonomous University of Mexico – College of Geography</span></li>
+            <li><strong>Dr. Gabriela Elisa Sued</strong><span class="committee-affiliation">National Autonomous University of Mexico – Institute of Research in Applied Mathematics and Systems</span></li>
+            <li><strong>Dr. Mario Aldape Pérez</strong><span class="committee-affiliation">National Polytechnic Institute – Center for Innovation and Development in Computing Technology</span></li>
+            <li><strong>Dr. Abril Valeria Uriarte Arcia</strong><span class="committee-affiliation">National Polytechnic Institute – Center for Innovation and Development in Computing Technology</span></li>
+            <li><strong>Dr. Yenny Villuendas Rey</strong><span class="committee-affiliation">National Polytechnic Institute – Center for Innovation and Development in Computing Technology</span></li>
+            <li><strong>Dr. Itzamá López Yáñez</strong><span class="committee-affiliation">National Polytechnic Institute – Center for Innovation and Development in Computing Technology</span></li>
+            <li><strong>Dr. Iclia Villordo Jimenez</strong><span class="committee-affiliation">National Polytechnic Institute – Interdisciplinary Professional Unit in Engineering and Advanced Technologies</span></li>
+            <li><strong>Dr. Oscar Camacho Nieto</strong><span class="committee-affiliation">National Polytechnic Institute – Center for Nanosciences</span></li>
+            <li><strong>Dr. Miguel Jesús Torres Ruiz</strong><span class="committee-affiliation">National Polytechnic Institute – Computing Research Center</span></li>
+            <li><strong>Dr. José Giovanni Guzmán Lugo</strong><span class="committee-affiliation">National Polytechnic Institute – Computing Research Center</span></li>
+            <li><strong>Dr. Rolando Quintero Téllez</strong><span class="committee-affiliation">National Polytechnic Institute – Computing Research Center</span></li>
+            <li><strong>Carlos Guzmán Sánchez Mejorada</strong><span class="committee-affiliation">National Polytechnic Institute – Computing Research Center</span></li>
+            <li><strong>Dr. Eusebio Ricárdez Vázquez</strong><span class="committee-affiliation">National Polytechnic Institute – Computing Research Center</span></li>
+            <li><strong>Dr. Grigori Sidorov</strong><span class="committee-affiliation">National Polytechnic Institute – Computing Research Center</span></li>
+            <li><strong>Dr. Olga Kolesnikova</strong><span class="committee-affiliation">National Polytechnic Institute – Computing Research Center</span></li>
+            <li><strong>Dr. Cornelio Yáñez Márquez</strong><span class="committee-affiliation">National Polytechnic Institute – Computing Research Center</span></li>
+            <li><strong>Dr. Amadeo José Argüelles Cruz</strong><span class="committee-affiliation">National Polytechnic Institute – Computing Research Center</span></li>
+            <li><strong>Dr. Antonio Alarcón Paredes</strong><span class="committee-affiliation">National Polytechnic Institute – Computing Research Center</span></li>
+          </ul>
+        </div>
+
+      </article>
 
     </div>
 
@@ -401,7 +626,7 @@ script-src 'self' 'unsafe-inline';
        FOOTER
   ========================= -->
 
-  <footer class="footer">
+ <footer class="footer">
 
   <div class="footer-container">
 
@@ -452,7 +677,7 @@ script-src 'self' 'unsafe-inline';
       <h3>Venue</h3>
 
       <p>
-        Centro de Investigación en Computación CIC 2
+        Centro de Investigación en Computación CIC
       </p>
 
       <p>
@@ -463,6 +688,11 @@ script-src 'self' 'unsafe-inline';
         geoai@cic.ipn.mx
       </p>
 
+      <!-- MAPA -->
+      <div class="footer-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.8930938457447!2d-99.15014742532453!3d19.50323473842242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f84a9cf3183d%3A0x78efe76dd0d5bbe1!2sCentro%20de%20Investigaci%C3%B3n%20en%20Computaci%C3%B3n%20del%20IPN!5e0!3m2!1ses-419!2smx!4v1778205944469!5m2!1ses-419!2smx" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
     </div>
 
   </div>
@@ -472,7 +702,7 @@ script-src 'self' 'unsafe-inline';
   <div class="footer-bottom">
 
     <p>
-      © 2026 GeoAI Congress — CIC IPN papu aun mas pro
+      © 2026 GeoAI Congress — CIC IPN 
     </p>
 
     <div class="footer-social">

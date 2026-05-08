@@ -14,3 +14,20 @@ window.addEventListener("scroll", () => {
   }
 
 });
+
+// Schedule day switcher (muestra un día entero a la vez)
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.day-button');
+  const panels = document.querySelectorAll('.schedule-panel');
+
+  function showDay(day){
+    buttons.forEach(b => b.classList.toggle('active', b.dataset.day === day));
+    panels.forEach(p => p.hidden = p.dataset.day !== day);
+    try{ localStorage.setItem('geoai-schedule-day', day); }catch(e){}
+  }
+
+  buttons.forEach(b => b.addEventListener('click', () => showDay(b.dataset.day)));
+
+  const saved = (function(){ try{ return localStorage.getItem('geoai-schedule-day'); }catch(e){ return null;} })();
+  showDay(saved || 'martes');
+});
